@@ -1,12 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from 'vue';
+import App from './App/App.vue';
+import router from './router';
+import store from './store';
 
-Vue.config.productionTip = false
+// Import SCSS and Globals
+import './assets/styles/main.scss';
+import './components/_globals';
+import './directives/_globals';
+import './filters/_globals';
+import './mixins/_globals';
 
+// Vue Init
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h(App),
+}).$mount('#app');
