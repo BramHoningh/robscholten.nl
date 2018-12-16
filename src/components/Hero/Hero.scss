@@ -1,0 +1,12 @@
+// Hero SCSS
+.hero {
+  flex-grow: 1;
+  padding: 3.2rem $mobilePadding $mobilePadding;
+  width: 100%;
+  text-align: center;
+  background-color: $primary-color;
+
+  a {
+    margin-top: 2.8rem;
+  }
+}

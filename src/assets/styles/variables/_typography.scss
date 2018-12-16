@@ -1,14 +1,15 @@
 // Typography
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
 // Base Font
-$font-family: 'Roboto', sans-serif;
-$font-family-heading: 'Roboto', sans-serif;
+$font-family: 'Poppins', sans-serif;
+$font-family-heading: 'Poppins', sans-serif;
 
 $font-weight: normal;
 $font-size: 1.6rem;
-$line-height: 1.4;
+$line-height: normal;
 
-$font-color: #222;
+$font-color: $secondary-color;
 
 // Font Extender
 
@@ -19,5 +20,6 @@ $font-color: #222;
 
 %heading-style {
   font-family: $font-family-heading;
-	font-weight: bold;
+  font-weight: bold;
+  color: $white;
 }

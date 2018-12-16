@@ -1,8 +1,10 @@
-import { ExampleComponent } from '../../components';
+import { MainHeader, Hero, Experience } from '../../components';
 
 export default {
   name: 'Home',
   components: {
-    ExampleComponent,
+    MainHeader,
+    Hero,
+    Experience,
   },
 };

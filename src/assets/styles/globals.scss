@@ -2,6 +2,7 @@
 // This will import in every Vue component SCSS File.
 //
 
+@import "variables/variables";
 @import './variables/breakpoints';
 @import './variables/colors';
 @import './variables/typography';

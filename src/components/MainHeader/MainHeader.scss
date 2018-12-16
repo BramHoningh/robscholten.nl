@@ -1,0 +1,80 @@
+// MainHeader SCSS
+.main-header {
+  padding: $mobilePadding;
+  width: 100%;
+  background-color: $primary-color;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.24);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $desktopMaxWidth;
+  }
+
+  .left-content {
+    display: flex;
+    align-items: center;
+
+    .personal-image {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    .header-text {
+      margin-left: 1rem;
+
+      .job-title {
+        margin-bottom: 0.4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .name {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1;
+        color: $white;
+      }
+    }
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+@include tablet {
+  .main-header {
+    .left-content {
+      .personal-image {
+        width: 64px;
+        height: 64px;
+      }
+
+      .header-text {
+        margin-left: 1.5rem;
+
+        .job-title {
+          font-size: 1.8rem;
+        }
+
+        .name {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .btn {
+      align-self: center;
+      display: block;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+}

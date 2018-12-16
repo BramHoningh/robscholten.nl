@@ -2,8 +2,9 @@
 <script src="./Home.js"></script>
 
 <template>
-  <div>
-    <h1>Home</h1>
-    <ExampleComponent />
+  <div class="home-page">
+    <MainHeader />
+    <Hero />
+    <Experience />
   </div>
 </template>

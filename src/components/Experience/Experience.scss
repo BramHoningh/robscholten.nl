@@ -1,0 +1,57 @@
+// Experience SCSS
+.experience {
+  padding: $mobilePadding $mobilePadding 4rem $mobilePadding;
+  background-color: $primary-color;
+
+  .title {
+    font-size: 1.8rem;
+    line-height: 2.56;
+    line-height: -0.1px;
+    color: $white;
+  }
+
+  .work-experience {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+
+    .experience-item {
+      .item-logo {
+        width: 48px;
+        height: 48px;
+        border: 1px solid $gray;
+        border-radius: 100%;
+      }
+
+      .item-status {
+        position: relative;
+        margin: 1.6rem auto 0;
+        width: 16px;
+        height: 16px;
+        background-color: rgba($green, 0.24);
+        border-radius: 100%;
+        z-index: 100;
+
+        &:before {
+          content: '';
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: $green;
+          border-radius: 100%;
+        }
+
+        &.inactive {
+          background-color: rgba($orange, 0.24);
+
+          &:before {
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

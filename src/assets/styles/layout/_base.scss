@@ -1,4 +1,8 @@
 // Base styling
+html, body {
+  height: 100%;
+}
+
 body {
   @extend %base-style;
 }
@@ -8,7 +12,9 @@ h1, h2 ,h3, h4, h5, h6, label {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 4.8rem;
+  line-height: 1.33;
+  letter-spacing: -1.3px;
 }
 
 h2 {
@@ -24,9 +30,12 @@ h4 {
 }
 
 p {
-  color: lighten( $black, 40% );
+  color: $secondary-color;
+  line-height: 1.94;
+  letter-spacing: -0.1px;
 }
 
 a {
   color: $primary-color;
+  text-decoration: none;
 }
