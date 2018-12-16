@@ -2,25 +2,50 @@
 .experience {
   padding: $mobilePadding $mobilePadding 4rem $mobilePadding;
   background-color: $primary-color;
+  transition: padding .5s ease-in-out;
 
-  .title {
+  .experience-inner {
+    margin: 0 auto;
+    max-width: $desktopMaxWidth;
+  }
+
+  .title, .desktop-title {
     font-size: 1.8rem;
     line-height: 2.56;
     line-height: -0.1px;
     color: $white;
   }
 
+  .desktop-title {
+    display: none;
+  }
+
   .work-experience {
     margin-top: 1.6rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .experience-item {
+      vertical-align: middle;
+
+      &.empty {
+        display: none;
+        width: 10px;
+        height: 10px;
+        background-color: rgba($white, 0.24);
+        border-radius: 100%;
+      }
+
       .item-logo {
         width: 48px;
         height: 48px;
         border: 1px solid $gray;
         border-radius: 100%;
+
+        .logo-icon {
+          width: 100%;
+        }
       }
 
       .item-status {
@@ -53,5 +78,65 @@
         }
       }
     }
+  }
+}
+
+@include tablet {
+  .experience {
+    padding: $desktopPaddingSmall;
+
+    .title {
+      display: none;
+    }
+
+    .desktop-title {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 22rem;
+      }
+    }
+
+    .work-experience {
+      display: block;
+
+      .experience-item {
+        display: inline-block;
+
+        &.empty {
+          display: inline-block;
+          margin-right: 2.4rem !important;
+
+          &:nth-last-of-type(2) {
+            background-color: rgba($white, 0.16);
+          }
+
+          &:last-of-type {
+            background-color: rgba($white, 0.08);
+          }
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 1.6rem;
+        }
+
+        .item-status {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .experience {
+    padding-left: $desktopPaddingLarge;
+    padding-right: $desktopPaddingLarge;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .experience {
+    padding-bottom: 8rem;
   }
 }

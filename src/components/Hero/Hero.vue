@@ -3,8 +3,10 @@
 
 <template>
   <div class="hero">
-    <h1>I Love Pixels</h1>
-    <p>Hey, I’m Rob Scholten. A screen designer From the netherlands. Currently I’m a designer at Strakzat and running Pixeldenker in my free time.</p>
-    <a href="#" class="btn">View Portfolio</a>
+    <div class="hero-inner">
+      <h1>I Love Pixels</h1>
+      <p>Hey, I’m Rob Scholten. A screen designer From the netherlands. Currently I’m a designer at Strakzat and running Pixeldenker in my free time.</p>
+      <a href="#" class="btn">View Portfolio</a>
+    </div>
   </div>
 </template>

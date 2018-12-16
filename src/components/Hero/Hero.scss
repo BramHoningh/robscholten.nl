@@ -5,8 +5,38 @@
   width: 100%;
   text-align: center;
   background-color: $primary-color;
+  transition: padding .5s ease-in-out;
+
+  .hero-inner {
+    margin: 0 auto;
+    max-width: $desktopMaxWidth;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 34.3rem;
+  }
 
   a {
     margin-top: 2.8rem;
+  }
+}
+
+@include tablet {
+  .hero {
+    padding: 14.6rem $desktopPaddingSmall $desktopPaddingSmall;
+    text-align: left;
+
+    p {
+      margin: 0;
+      max-width: 58.6rem;
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    padding-left: $desktopPaddingLarge;
+    padding-right: $desktopPaddingLarge;
   }
 }

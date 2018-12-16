@@ -5,6 +5,7 @@ html, body {
 
 body {
   @extend %base-style;
+  background-color: $primary-color;
 }
 
 h1, h2 ,h3, h4, h5, h6, label {
@@ -38,4 +39,16 @@ p {
 a {
   color: $primary-color;
   text-decoration: none;
+}
+
+@include tablet {
+  h1 {
+    font-size: 9.6rem;
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+  }
+
+  p {
+    font-size: 2.4rem;
+  }
 }

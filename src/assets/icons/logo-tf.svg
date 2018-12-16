@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-tf</title>
+    <desc>Created with Sketch.</desc>
+    <g id="current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-579.000000, -853.000000)">
+            <g id="work-section" transform="translate(96.000000, 789.000000)">
+                <g id="logo-tf" transform="translate(484.000000, 65.000000)">
+                    <rect id="Rectangle-9" stroke-opacity="0.32" stroke="#FFFFFF" fill="#000000" x="-0.5" y="-0.5" width="49" height="49" rx="24.5"></rect>
+                    <path d="M26,23 L33,23 L33,26 L26,26 L26,31 L23,31 L23,17 L26,17 L33,17 L33,20 L26,20 L26,23 Z M16,20 L16,31 L13,31 L13,20 L8,20 L8,17 L20,17 L20,20 L16,20 Z M40,17 L40,25 L37,25 L37,17 L40,17 Z M38.5,30.5 C37.6715729,30.5 37,29.8284271 37,29 C37,28.1715729 37.6715729,27.5 38.5,27.5 C39.3284271,27.5 40,28.1715729 40,29 C40,29.8284271 39.3284271,30.5 38.5,30.5 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

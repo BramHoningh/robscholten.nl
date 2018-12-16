@@ -4,24 +4,53 @@ export default {
     return {
       items: [
         {
-          logo: '',
+          logo: 'logo-px',
           status: 'active',
+          isEmpty: false,
         },
         {
-          logo: '',
+          logo: 'logo-sz',
           status: 'active',
+          isEmpty: false,
         },
         {
-          logo: '',
-          status: 'inactive',
+          isEmpty: true,
         },
         {
-          logo: '',
-          status: 'inactive',
+          isEmpty: true,
         },
         {
-          logo: '',
+          isEmpty: true,
+        },
+        {
+          isEmpty: true,
+        },
+        {
+          isEmpty: true,
+        },
+        {
+          logo: 'logo-fr',
           status: 'inactive',
+          isEmpty: false,
+        },
+        {
+          logo: 'logo-yg',
+          status: 'inactive',
+          isEmpty: false,
+        },
+        {
+          logo: 'logo-tf',
+          status: 'inactive',
+          isEmpty: false,
+        },
+        {
+          isEmpty: true,
+        },
+        {
+          isEmpty: true,
+        },
+        {
+          isEmpty: true,
         },
       ],
     };
