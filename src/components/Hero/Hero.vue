@@ -8,5 +8,11 @@
       <p>Hey, I’m Rob Scholten. A screen designer From the netherlands. Currently I’m a designer at Strakzat and running Pixeldenker in my free time.</p>
       <a href="#" class="btn">View Portfolio</a>
     </div>
+
+    <div class="hero-images">
+      <div class="image">
+        <img src="../../assets/images/db-assets/db-asset 01.png" alt="">
+      </div>
+    </div>
   </div>
 </template>

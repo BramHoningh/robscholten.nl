@@ -1,6 +1,7 @@
 // Hero SCSS
 .hero {
   flex-grow: 1;
+  position: relative;
   padding: 3.2rem $mobilePadding $mobilePadding;
   width: 100%;
   text-align: center;
