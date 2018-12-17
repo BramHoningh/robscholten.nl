@@ -1,4 +1,6 @@
 // Hero SCSS
+@import "../../assets/styles/partials/animations";
+
 .hero {
   flex-grow: 1;
   position: relative;
@@ -9,8 +11,10 @@
   transition: padding .5s ease-in-out;
 
   .hero-inner {
+    position: relative;
     margin: 0 auto;
     max-width: $desktopMaxWidth;
+    z-index: 999;
   }
 
   p {
@@ -20,6 +24,61 @@
 
   a {
     margin-top: 2.8rem;
+  }
+
+  .hero-images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 720px;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000000);
+      z-index: 10;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .image {
+      margin: 0.4rem 0.8rem;
+      width: 128px;
+      opacity: 0.2;
+      transition: opacity .5s ease-in-out;
+      animation-name: anim-tiles;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+$tiles: 25;
+$rows: 6;
+$animationDuration: 20s;
+$animationElementsCount: 5;
+$delayBetweenTiles: 0.2;
+$totalDelayTime: $animationElementsCount * $delayBetweenTiles;
+
+
+@for $r from 1 through $rows {
+  .row:nth-of-type(#{$r}) {
+    @for $i from 1 through $animationElementsCount {
+      .image:nth-of-type(#{$i}) {
+        //animation-delay: #{($i + $r) + ($i / (3 / $r))}s;
+        animation-delay: #{($i + $r) + ((($i * $delayBetweenTiles) - $totalDelayTime) + ($r / 3))}s;
+      }
+    }
   }
 }
 
@@ -39,5 +98,10 @@
   .hero {
     padding-left: $desktopPaddingLarge;
     padding-right: $desktopPaddingLarge;
+
+    .hero-images {
+      top: 6.5rem;
+      right: $desktopPaddingLarge;
+    }
   }
 }

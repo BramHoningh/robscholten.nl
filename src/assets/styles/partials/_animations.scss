@@ -1,10 +1,10 @@
 // Animations
 
-// @keyframes example {
-//   from {
-//     background-color: red;
-//   }
-//   to {
-//     background-color: yellow;
-//   }
-// }
+@keyframes anim-tiles {
+  0%, 50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
