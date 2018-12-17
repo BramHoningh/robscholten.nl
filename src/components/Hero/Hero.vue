@@ -6,7 +6,7 @@
     <div class="hero-inner">
       <h1>I Love Pixels</h1>
       <p>Hey, I’m Rob Scholten. A screen designer from the Netherlands. Currently I’m a designer at Strakzat and running Pixeldenker in my free time.</p>
-      <a href="#" class="btn">View Portfolio</a>
+      <a href="https://dribbble.com/RobScholten" target="_blank" class="btn">View Portfolio</a>
     </div>
 
     <div class="hero-images">

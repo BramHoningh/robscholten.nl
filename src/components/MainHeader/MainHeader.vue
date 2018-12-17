@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <a class="btn btn-dark" href="#">Contact</a>
+      <a class="btn btn-dark" href="mailto:info@robscholten.nl">Contact</a>
     </div>
   </header>
 </template>

@@ -1,3 +1,6 @@
+const path = require('path');
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
+
 // vue.config.js
 module.exports = {
   css: {
@@ -14,5 +17,13 @@ module.exports = {
       .use('svg-inline-loader')
       .loader('svg-inline-loader')
       .end();
+  },
+  configureWebpack: {
+    plugins: [
+      new PrerenderSPAPlugin({
+        staticDir: path.join(__dirname, 'dist'),
+        routes: ['/'],
+      }),
+    ],
   },
 };
