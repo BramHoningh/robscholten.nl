@@ -1,8 +1,10 @@
 // Experience SCSS
 .experience {
   padding: $mobilePadding $mobilePadding 4rem $mobilePadding;
-  background-color: $primary-color;
+  //background-color: $primary-color;
   transition: padding .5s ease-in-out;
+  z-index: 99;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
 
   .experience-inner {
     margin: 0 auto;
