@@ -70,17 +70,13 @@ export default {
               png: 'db-asset-14.png',
             },
             {
-              webp: 'db-asset-14@1x.webp',
-              png: 'db-asset-14.png',
+              webp: 'db-asset-15@1x.webp',
+              png: 'db-asset-15.png',
             },
           ],
         },
         {
           images: [
-            {
-              webp: 'db-asset-15@1x.webp',
-              png: 'db-asset-15.png',
-            },
             {
               webp: 'db-asset-16@1x.webp',
               png: 'db-asset-16.png',
@@ -97,14 +93,14 @@ export default {
               webp: 'db-asset-19@1x.webp',
               png: 'db-asset-19.png',
             },
-          ],
-        },
-        {
-          images: [
             {
               webp: 'db-asset-20@1x.webp',
               png: 'db-asset-20.png',
             },
+          ],
+        },
+        {
+          images: [
             {
               webp: 'db-asset-21@1x.webp',
               png: 'db-asset-21.png',
@@ -120,6 +116,10 @@ export default {
             {
               webp: 'db-asset-24@1x.webp',
               png: 'db-asset-24.png',
+            },
+            {
+              webp: 'db-asset-25@1x.webp',
+              png: 'db-asset-25.png',
             },
           ],
         },
